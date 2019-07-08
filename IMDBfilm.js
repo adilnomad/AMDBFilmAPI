@@ -13,22 +13,18 @@ function listening() {
 	console.log("listening on port 3000");
 }
 // root page
-app.get('/', welcomePage);
-function welcomePage(request, response) {
-	response.send('Hi! Please, enter year search key word in URL above after!');
-}
- var data;
+app.use(express.static("website"));
 
  app.get('/:keyWord', getFilmData);
-
  function getFilmData(req, res) {
 
  	var keyWord = req.params.keyWord;
  	//call OMDB API using request
  	request('http://www.omdbapi.com/?s='+keyWord+'&apikey=aa200f33', { json: true }, (err, resp, body) => {
  		 if (err) { return console.log(err); }
-  		res.send(JSON.stringify(body.Search, null, 2));
+  		res.send(body.Search);
 	});
+
 }
 
 
