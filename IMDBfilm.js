@@ -4,7 +4,7 @@ const request = require('request');
 const config = require('./config.json');
 
 const app = express()
-var server = app.listen(3000, listening);
+var server = app.listen(8081, listening);
 
 function listening() {
 	console.log("listening on port 3000");

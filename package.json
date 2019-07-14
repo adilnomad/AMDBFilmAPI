@@ -16,6 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/adilnomad/AMDBFilmAPI.git"
   },
+  "scripts": {
+    "start": "node IMDBfilm.js"
+  },
   "keywords": [
     "imdb"
   ],
