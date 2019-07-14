@@ -1,0 +1,31 @@
+{
+  "name": "imdblookup",
+  "version": "1.0.0",
+  "description": "an API to look up films",
+  "main": "IMDBfilm.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adilnomad/AMDBFilmAPI.git"
+  },
+  "scripts": {
+    "start": "node IMDBfilm.js"
+  },
+  "keywords": [
+    "imdb"
+  ],
+  "author": "Adil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adilnomad/AMDBFilmAPI/issues"
+  },
+  "homepage": "https://github.com/adilnomad/AMDBFilmAPI#readme"
+}
