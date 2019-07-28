@@ -14,6 +14,8 @@
           var xhttp = new XMLHttpRequest();
           xhttp.onreadystatechange = function() {
               var obj = JSON.parse(xhttp.responseText);
+              var cleanList = document.getElementById("myList");
+              cleanList.innerHTML = '';
               if (this.readyState == 4 && this.status == 200) {
                 for (var i = 0; i < obj.length; i++) {
                   var node = document.createElement("LI");
