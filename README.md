@@ -1,6 +1,4 @@
-IMDB Poster Lookup!
-
-This is a project where you could lookup 
+IMDB Poster Lookup project!
 
 checkout on: https://joli-chaise-76015.herokuapp.com/
 
