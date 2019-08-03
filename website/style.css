@@ -1,40 +1,45 @@
 body {
   margin: 0;
   padding: 0;
-  background: #e84118;
+  background-image: linear-gradient(to right, #161a21, #1D2162);
 }
 
 .buttonOne {
   background-color: white;
   border: none;
   color: black;
-  padding: 5px 5px;
+  padding: 5px 5px 5px 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .fontOne {
 	font-family: "Times New Roman";
-	font-size: 20;
+	font-size: 25;
+  color: white;
 
+}
+
+#myList {
+  padding-top: 100px;
 }
 
 .search-box {
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #2f3640;
-  height: 35px;
-  border-radius: 35px;
+  height: 40px;
+  border-radius: 40px;
   padding: 10px;
 }
 
 .search-box:hover > .search-txt {
-  width: 500px;
-  padding: 0 6px;
+  width: 330px;
+  padding: 5 5px;
 }
 
 .search-box:hover > .search-btn {
@@ -50,8 +55,6 @@ body {
   border-radius: 50%;
   background: #2f3640;
   display: flex;
-  justify-content: center;
-  align-items: center;
   transition: 0.4s;
   color: white;
   cursor: pointer;
@@ -69,8 +72,12 @@ body {
   padding: 0;
   color: white;
   font-size: 16px;
-  transition: 0.4s;
+  transition: 0.6s;
   line-height: 40px;
   width: 0px;
   font-weight: bold;
 }
+
+
+
+

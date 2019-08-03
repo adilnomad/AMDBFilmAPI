@@ -1,54 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-     <meta charset="UTF-8">
-     <link rel="stylesheet" href="style.css">
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="style.css">
       <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/json2html/1.2.0/json2html.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+      <script src="getData.js"></script>
       <title>Film search</title>
       <p id="JSON"></p>
-      <script>
-        function getMovies() {
-          // get search key word
-          var keyWord = document.getElementById("keyWord").value;
-          var xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-              var obj = JSON.parse(xhttp.responseText);
-              var cleanList = document.getElementById("myList");
-              cleanList.innerHTML = '';
-              if (this.readyState == 4 && this.status == 200) {
-                for (var i = 0; i < obj.length; i++) {
-                  var node = document.createElement("LI");
-                  var img = document.createElement("IMG");
-                  //get poster
-                  img.setAttribute("src", obj[i].Poster);
-                  node.setAttribute("id", "fontOne");
-                  var textnode = document.createTextNode(obj[i].Title);
-                  node.appendChild(textnode);
-                  node.appendChild(document.createElement("BR"));
-                  node.appendChild(img);
-                  document.getElementById("myList").appendChild(node)
-                }
-              }
-              document.getElementById("myList").style.padding = "10px 5px";
-              document.getElementById("myList").style.fontSize = "x-large";
-          };
-          //  make API call
-          xhttp.open("GET", "/" + String(keyWord) , true);
-          xhttp.send();
-        }
-       </script>
-   </head>
+  </head>
 
-   <body>
-        <H1>Welcome to film search! </H1>
-       <div class="search-box">
-       <input type="text" id="keyWord" class="search-txt" placeholder="Type to search film"/>
-       <button class="buttonOne" onclick="getMovies()"><img src="https://image.flaticon.com/icons/png/512/55/55369.png" style="width:25px;height:20px;"/></button>
-       </a>
-        <ul id="myList">
-        </ul>
-   </body>
+  <body onload="defaultPage()">
+      <div class="search-box">
+      <input type="text" id="keyWord" class="search-txt" placeholder="Type to search film"/>
+      <button class="buttonOne" onclick="getMovies()">
+        <img src="searchIcon.png" style="width:20px;height:20px;padding-left:5px; padding-top:4px;"/></button>
+      <ul id="myList">
+      </ul>
+  </body>
 </html>
 
 
