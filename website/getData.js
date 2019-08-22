@@ -20,6 +20,7 @@ function defaultPage() {
         node.style.positioning = "absolute";
         node.style.right = "300px";
         var img = document.createElement("IMG");
+        img.setAttribute("id", "posterStyle");
         
         //get poster
         img.setAttribute("src", obj[0].Poster);
@@ -65,6 +66,7 @@ function getMovies() {
           //get poster
           img.setAttribute("src", obj[i].Poster);
           img.setAttribute("style", "width:340px; height:600px");
+          img.setAttribute("id", "posterStyle");
           node.setAttribute("id", "fontOne");
           var textnode = document.createTextNode(obj[i].Title);
           node.appendChild(textnode);

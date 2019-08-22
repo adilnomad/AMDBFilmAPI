@@ -27,14 +27,23 @@ body {
 }
 
 #myList {
+  position: absolute;
   padding-top: 100px;
+}
+
+#posterStyle {
+  box-shadow: 1px 1px 20px black;
+  transition: transform .2s;
+}
+#posterStyle:hover {
+  box-shadow: 1px 1px 30px white;
+  transform: scale(1.05);
 }
 
 .search-box {
   position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 30%;
   background: #2f3640;
   height: 40px;
   border-radius: 40px;
@@ -45,13 +54,6 @@ body {
   width: 330px;
   padding: 5 5px;
 }
-
-.search-box:hover > .search-btn {
-  background: white;
-  color: black;
-}
-
-
 
 .search-txt {
   border: none;
