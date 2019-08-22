@@ -7,7 +7,7 @@ const request = require('request');
 const config = require('./config.json');
 
 const app = express()
-var server = app.listen(process.env.PORT, listening);
+var server = app.listen(process.env.PORT || 8000, listening);
 
 function listening() {
 	console.log("listening...");
