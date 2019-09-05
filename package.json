@@ -2,6 +2,7 @@
   "name": "imdblookup",
   "version": "1.0.0",
   "description": "an API to look up films",
+  "homepage" : "https://adilnomad.github.io/posters/",
   "main": "IMDBfilm.js",
   "dependencies": {
     "express": "^4.17.1",
@@ -10,7 +11,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node IMDBfilm.js"
+    "start": "node IMDBfilm.js",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "repository": {
     "type": "git",
