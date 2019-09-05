@@ -5,19 +5,16 @@
   "main": "IMDBfilm.js",
   "dependencies": {
     "express": "^4.17.1",
+    "gh-pages": "^2.1.1",
     "request": "^2.88.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node IMDBfilm.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adilnomad/AMDBFilmAPI.git"
-  },
-  "scripts": {
-    "start": "node IMDBfilm.js"
   },
   "keywords": [
     "imdb"
